@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#
+# close tab by url
+
+usage() {
+    echo "usage: $(basename $0) url ..." 1>&2
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+[[ $# == 0 ]] && usage "$@"
+
+pid="$(brave pid)" || exit
+[[ -z "$pid" ]] && exit
+
+osascript "${BASH_SOURCE[0]%/*}"/."${BASH_SOURCE[0]##*/}".applescript "$@"

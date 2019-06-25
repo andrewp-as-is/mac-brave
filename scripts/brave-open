@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+# open url(s)
+
+usage() {
+    echo "usage: $(basename $0) url ..." 1>&2
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+[[ $# == 0 ]] && usage "$@"
+
+# open/refresh url and make tab active
+
+osascript "${BASH_SOURCE[0]%/*}"/."${BASH_SOURCE[0]##*/}".applescript "$@"

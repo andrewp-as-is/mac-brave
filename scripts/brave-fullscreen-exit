@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#
+# exit fullscreen mode
+
+usage() {
+    echo "usage: $(basename $0)" 1>&2
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+[[ $# != 0 ]] && usage "$@"
+
+pid="$(brave pid)" || exit
+[[ -z "$pid" ]] && exit
+
+fullscreen="$(brave fullscreen-detect)" || exit
+[[ "$fullscreen" == 0 ]] && exit
+
+osascript "${BASH_SOURCE[0]%/*}"/."${BASH_SOURCE[0]##*/}".applescript "$@"
+

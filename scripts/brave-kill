@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#
+# list tabs with playing audio
+
+usage() {
+    echo "usage: $(basename $0)" 1>&2
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+pid="$(brave pid)" || exit
+[[ -n "$pid" ]] && { kill -9 "$pid" &> /dev/null; exit; };:

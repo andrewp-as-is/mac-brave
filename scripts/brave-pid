@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#
+# print 'Brave Browser.app' pid
+
+usage() {
+    echo "usage: $(basename $0)" 1>&2
+    [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+ps -ax | grep -v grep | grep "Brave Browser.app" | head -1 | awk '{print $1}'
