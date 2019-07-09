@@ -6,9 +6,13 @@ https://pypi.org/project/python-readme-generator/
 [![](https://img.shields.io/badge/OS-macOS-blue.svg?longCache=True)]()
 [![](https://img.shields.io/badge/language-AppleScript-blue.svg?longCache=True)]()
 [![](https://img.shields.io/pypi/v/mac-brave.svg?maxAge=3600)](https://pypi.org/project/mac-brave/)
+[![](https://img.shields.io/npm/v/mac-brave.svg?maxAge=3600)](https://www.npmjs.com/package/mac-brave)
 [![Travis](https://api.travis-ci.org/looking-for-a-job/mac-brave.svg?branch=master)](https://travis-ci.org/looking-for-a-job/mac-brave/)
 
 #### Installation
+```bash
+$ [sudo] npm i -g mac-brave
+```
 ```bash
 $ [sudo] pip install mac-brave
 ```
@@ -22,6 +26,7 @@ command|`usage`
 [`brave-fullscreen-detect`](# "print 1 if 'Brave Browser.app' is in fullscreen mode, else 0") |`usage: brave-fullscreen-detect`
 [`brave-fullscreen-enter`](# "enter fullscreen mode") |`usage: brave-fullscreen-enter`
 [`brave-fullscreen-exit`](# "exit fullscreen mode") |`usage: brave-fullscreen-exit`
+[`brave-isready`](# "print 1 if Brave Browser is active and ready, else 0") |`usage: brave-isready timeout`
 [`brave-kill`](# "list tabs with playing audio") |`usage: brave-kill`
 [`brave-noisy-tabs`](# "print") |`usage: brave-noisy-tabs`
 [`brave-open`](# "open url(s)") |`usage: brave-open url ...`
@@ -58,6 +63,15 @@ frontmost (`1` or `0`)
 ```bash
 $ brave frontmost
 0
+```
+
+`Brave Browser.app` process
+```bash
+$ brave pid
+42
+$ brave isready 5 # timeout 5 seconds
+1
+$ brave kill
 ```
 
 <p align="center">

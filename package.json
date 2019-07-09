@@ -1,0 +1,37 @@
+{
+  "name": "mac-brave",
+  "version": "2019.7.9",
+  "description": "macOS Brave Browser.app scripts",
+  "keywords": [
+    "Brave",
+    "Browser"
+  ],
+  "homepage": "https://github.com/looking-for-a-job/mac-brave",
+  "license": "Unlicense",
+  "bin": {
+    ".brave-close.applescript": "./scripts/.brave-close.applescript",
+    ".brave-fullscreen-detect.applescript": "./scripts/.brave-fullscreen-detect.applescript",
+    ".brave-fullscreen-enter.applescript": "./scripts/.brave-fullscreen-enter.applescript",
+    ".brave-fullscreen-exit.applescript": "./scripts/.brave-fullscreen-exit.applescript",
+    ".brave-isready.applescript": "./scripts/.brave-isready.applescript",
+    ".brave-noisy-tabs.applescript": "./scripts/.brave-noisy-tabs.applescript",
+    ".brave-open.applescript": "./scripts/.brave-open.applescript",
+    ".brave-refresh.applescript": "./scripts/.brave-refresh.applescript",
+    ".brave-url.applescript": "./scripts/.brave-url.applescript",
+    ".brave-urls.applescript": "./scripts/.brave-urls.applescript",
+    "brave": "./scripts/brave",
+    "brave-close": "./scripts/brave-close",
+    "brave-frontmost": "./scripts/brave-frontmost",
+    "brave-fullscreen-detect": "./scripts/brave-fullscreen-detect",
+    "brave-fullscreen-enter": "./scripts/brave-fullscreen-enter",
+    "brave-fullscreen-exit": "./scripts/brave-fullscreen-exit",
+    "brave-isready": "./scripts/brave-isready",
+    "brave-kill": "./scripts/brave-kill",
+    "brave-noisy-tabs": "./scripts/brave-noisy-tabs",
+    "brave-open": "./scripts/brave-open",
+    "brave-pid": "./scripts/brave-pid",
+    "brave-refresh": "./scripts/brave-refresh",
+    "brave-url": "./scripts/brave-url",
+    "brave-urls": "./scripts/brave-urls"
+  }
+}
