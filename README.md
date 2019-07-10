@@ -17,6 +17,11 @@ $ [sudo] npm i -g mac-brave
 $ [sudo] pip install mac-brave
 ```
 
+#### Config
+```bash
+$ export BRAVE_TIMEOUT=10 # 5 by default
+```
+
 #### Scripts usage
 command|`usage`
 -|-

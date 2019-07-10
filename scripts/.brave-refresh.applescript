@@ -1,20 +1,20 @@
 #!/usr/bin/osascript
 
-property _TIMEOUT_APP: 10
-property _TIMEOUT_TAB: 2
-
 on run argv
+  set _APP_TIMEOUT to 5
+  if ("BRAVE_TIMEOUT" is in system attribute) then
+    set _APP_TIMEOUT to (system attribute "BRAVE_TIMEOUT") as integer
+  end if
+
   try
-    with timeout of _TIMEOUT_APP seconds
+    with timeout of _APP_TIMEOUT seconds
       repeat with _arg_url in argv
         tell application "Brave Browser"
           repeat with w in every window
             repeat with t in every tab in w
               set _tab_url to ((URL of t) as text)
               if _arg_url is _tab_url then
-                with timeout of _TIMEOUT_TAB seconds
-                  tell t to reload
-                end timeout
+                tell t to reload
               end if
             end repeat
           end repeat
