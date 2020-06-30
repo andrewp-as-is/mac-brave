@@ -1,44 +1,27 @@
 <!--
-https://pypi.org/project/readme-generator/
-https://pypi.org/project/python-readme-generator/
+https://readme42.com
 -->
 
-[![](https://img.shields.io/badge/OS-macOS-blue.svg?longCache=True)]()
-[![](https://img.shields.io/badge/language-AppleScript-blue.svg?longCache=True)]()
-[![](https://img.shields.io/pypi/v/mac-brave.svg?maxAge=3600)](https://pypi.org/project/mac-brave/)
-[![](https://img.shields.io/npm/v/mac-brave.svg?maxAge=3600)](https://www.npmjs.com/package/mac-brave)
-[![Travis](https://api.travis-ci.org/looking-for-a-job/mac-brave.svg?branch=master)](https://travis-ci.org/looking-for-a-job/mac-brave/)
 
-#### Installation
-```bash
-$ [sudo] npm i -g mac-brave
-```
+
+[![](https://img.shields.io/badge/OS-Unix-blue.svg?longCache=True)]()
+[![](https://img.shields.io/pypi/v/mac-brave.svg?maxAge=3600)](https://pypi.org/project/mac-brave/)
+[![](https://img.shields.io/npm/v/mac-brave.svg?maxAge=3600)](https://www.npmjs.com/package/mac-brave)[![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+[![](https://github.com/andrewp-as-is/mac-brave/workflows/tests42/badge.svg)](https://github.com/andrewp-as-is/mac-brave/actions)
+
+### Installation
 ```bash
 $ [sudo] pip install mac-brave
+```
+
+```bash
+$ [sudo] npm i -g mac-brave
 ```
 
 #### Config
 ```bash
 $ export BRAVE_TIMEOUT=10 # 5 by default
 ```
-
-#### Scripts usage
-command|`usage`
--|-
-`brave` |`usage: brave command [args]`
-[`brave-close`](# "close tab by url") |`usage: brave-close url ...`
-[`brave-frontmost`](# "print 1 if 'Brave Browser.app' is frontmost, else 0") |`usage: brave-frontmost`
-[`brave-fullscreen-detect`](# "print 1 if 'Brave Browser.app' is in fullscreen mode, else 0") |`usage: brave-fullscreen-detect`
-[`brave-fullscreen-enter`](# "enter fullscreen mode") |`usage: brave-fullscreen-enter`
-[`brave-fullscreen-exit`](# "exit fullscreen mode") |`usage: brave-fullscreen-exit`
-[`brave-isready`](# "print 1 if Brave Browser is active and ready, else 0") |`usage: brave-isready timeout`
-[`brave-kill`](# "list tabs with playing audio") |`usage: brave-kill`
-[`brave-noisy-tabs`](# "print") |`usage: brave-noisy-tabs`
-[`brave-open`](# "open url(s)") |`usage: brave-open url ...`
-[`brave-pid`](# "print 'Brave Browser.app' pid") |`usage: brave-pid`
-[`brave-refresh`](# "refresh url(s)") |`usage: brave-refresh url ...`
-[`brave-url`](# "print active url") |`usage: brave-url`
-[`brave-urls`](# "print urls") |`usage: brave-urls`
 
 #### Examples
 url(s)
@@ -80,5 +63,5 @@ $ brave kill
 ```
 
 <p align="center">
-    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+    <a href="https://readme42.com/">readme42.com</a>
 </p>
